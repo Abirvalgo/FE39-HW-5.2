@@ -1,0 +1,182 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+.form__block{
+	display: flex;
+	flex-direction: column;
+	width: 720px;
+	
+}
+
+input, select{
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: hidden;
+	}
+
+h2{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+color: #424242;
+}
+
+.form__text-mod{
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #BDBDBD;
+	outline: #BDBDBD 1px solid;
+	border-radius: 100px;
+	height: 50px;
+}
+#city, #mail-post{
+	margin: 0;
+	padding: 0;
+	padding-left: 24px;
+	margin-bottom: 24px;
+	width: 520px;
+	box-sizing: border-box;
+}
+#street{
+	margin: 0;
+	padding: 0;
+	padding-left: 24px;
+	width: 254px;
+	box-sizing: border-box;
+}
+#house, #appt, #zipcode{
+	margin: 0;
+	padding: 0;
+	padding-left: 24px;
+	width: 130px;
+	margin-left: 16px;
+	box-sizing: border-box;
+}
+#commentary{
+	margin: 0;
+	padding: 0;
+	padding-left: 24px;
+	width: 692px;
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
+#first-name, #second-name, #third-name, #phone {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+
+#first-name, #second-name {
+	margin-right: 16px;
+	margin-bottom: 24px;
+}
+
+.form-example1{
+	display: inline-block;
+}
+
+.phone__text, .email__text {
+	display: block;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 125%;
+	color: #424242;
+	margin-top: 8px;
+	margin-bottom: 27px;
+}
+#email{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 456px;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+.check-text{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #424242;
+}
+
+
+/*тупо копипаста со статьи, что нашел*/
+.custom-checkbox{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox+label::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #976464;
+	border-radius: 0.25em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+	background-image: url(../assets/images/check.svg);
+}
+
+.payment-style{
+	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #424242;
+}
+
+.custom-radio{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-radio+label::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #976464;
+	border-radius: 1.0em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.custom-radio:checked+label::before {
+	background-image: url(../assets/images/radio.svg);
+}
+
+
+
