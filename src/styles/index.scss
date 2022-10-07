@@ -1,0 +1,180 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@mixin mont400 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin mont400s16 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+$c-grey:#424242;
+$c-light-grey:#BDBDBD;
+$c-brown:#976464;
+
+
+
+.form__block{
+	display: flex;
+	flex-direction: column;
+	width: 720px;
+	&>h2{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 34px;
+		color: $c-grey;
+		}
+	form.form-example1{
+	.form-example1{
+		display: inline-block;
+	}
+	.form__text-mod{
+		display: inline-block;
+		@include mont400();
+		font-size: 14px;
+		line-height: 17px;
+		color: $c-light-grey;
+		outline: $c-light-grey 1px solid;
+		border-radius: 100px;
+		height: 50px;
+	}
+	input, select{
+		border-top-style: hidden;
+		border-right-style: hidden;
+		border-left-style: hidden;
+		border-bottom-style: hidden;
+		}
+		.custom-checkbox{
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			&+label::before {
+				content: '';
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				flex-shrink: 0;
+				flex-grow: 0;
+				border: 1px solid #976464;
+				border-radius: 0.25em;
+				margin-right: 0.5em;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50% 50%;
+			}
+			
+			&:checked+label::before {
+				background-image: url(../assets/images/check.svg);
+			}
+		}
+		.custom-radio{
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			&+label::before {
+				content: '';
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				flex-shrink: 0;
+				flex-grow: 0;
+				border: 1px solid $c-brown;
+				border-radius: 1.0em;
+				margin-right: 0.5em;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50% 50%;
+			}
+			
+			&:checked+label::before {
+				background-image: url(../assets/images/radio.svg);
+			}
+			
+		}
+		label.check-text, .payment-style{
+			@include mont400s16();
+			color: $c-grey;
+		}
+		#city, #mail-post{
+			margin: 0;
+			padding: 0;
+			padding-left: 24px;
+			margin-bottom: 24px;
+			width: 520px;
+			box-sizing: border-box;
+		}
+		#street{
+			margin: 0;
+			padding: 0;
+			padding-left: 24px;
+			width: 254px;
+			box-sizing: border-box;
+		}
+		#house, #appt, #zipcode{
+			margin: 0;
+			padding: 0;
+			padding-left: 24px;
+			width: 130px;
+			margin-left: 16px;
+			box-sizing: border-box;
+		}
+		#commentary{
+			margin: 0;
+			padding: 0;
+			padding-left: 24px;
+			width: 692px;
+			margin-top: 24px;
+			margin-bottom: 64px;
+		}
+
+		#first-name, #second-name, #third-name, #phone {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			width: 220px;
+			padding-left: 24px;
+			box-sizing: border-box;
+		}
+
+		#first-name, #second-name {
+			margin-right: 16px;
+			margin-bottom: 24px;
+		}
+
+		.phone__text, .email__text {
+			display: block;
+			@include mont400();
+			font-size: 12px;
+			line-height: 125%;
+			color: $c-grey;
+			margin-top: 8px;
+			margin-bottom: 27px;
+		}
+		#email{
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			width: 456px;
+			padding-left: 24px;
+			box-sizing: border-box;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
